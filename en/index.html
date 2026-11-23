@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Victoria Gribenko — Copywriter &amp; Editor</title>
+<meta name="description" content="Portfolio of Victoria Gribenko, copywriter, editor and content lead: social media, articles, email sequences, landing pages, video and AI-powered content.">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Onest:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: editor's proof sheet. Paper column, red-pencil accents, mono spec lines; formats switch with tabs */
+:root{
+  --paper:#F5F6FA; --sheet:#FFFFFF; --ink:#151821; --ink-2:#4A5063; --rule:#DDE0EA;
+  --pencil:#D93A3F; --cobalt:#2D4FD8; --tint:#ECEFFB;
+  --f-display:"Unbounded","Arial Black",system-ui,sans-serif;
+  --f-body:"Onest",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+  --r:10px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#0F1118; --sheet:#171A23; --ink:#ECEEF5; --ink-2:#A3A9BC; --rule:#2A2E3B;
+  --pencil:#FF6B6F; --cobalt:#8DA2FF; --tint:#1D2230; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#0F1118; --sheet:#171A23; --ink:#ECEEF5; --ink-2:#A3A9BC; --rule:#2A2E3B;
+  --pencil:#FF6B6F; --cobalt:#8DA2FF; --tint:#1D2230; color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{background:var(--paper);color:var(--ink);font:400 16px/1.6 var(--f-body);-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--paper)}
+a{color:var(--cobalt);text-underline-offset:3px}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--pencil);outline-offset:3px;border-radius:4px}
+h1,h2,h3,h4{text-wrap:balance;margin:0}
+p{margin:0}
+.wrap{max-width:1160px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.label{font-family:var(--f-mono);font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--ink-2)}
+
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:color-mix(in srgb,var(--paper) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--rule)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px}
+.brand{font-family:var(--f-display);font-weight:700;font-size:15px;color:var(--ink);text-decoration:none;white-space:nowrap}
+.nav{display:flex;gap:4px;flex-wrap:nowrap}
+.nav a{font-size:14px;color:var(--ink-2);text-decoration:none;padding:6px 10px;border-radius:999px;white-space:nowrap}
+.nav a:hover{color:var(--ink);background:var(--tint)}
+
+/* hero */
+.hero{padding-block:64px 56px}
+.hero .label{margin-bottom:18px}
+.hero h1{font-family:var(--f-display);font-weight:700;font-size:clamp(36px,6vw,72px);line-height:1.04;letter-spacing:-.02em}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:56px;align-items:start;margin-top:32px}
+.intro{display:grid;gap:16px;font-size:18px;line-height:1.65;max-width:60ch}
+.intro p:first-child{font-size:20px}
+.margin-note{border-left:2px solid var(--pencil);padding:4px 0 4px 18px;display:grid;gap:14px;margin:0}
+.margin-note dt{font-family:var(--f-mono);font-size:12px;color:var(--pencil);text-transform:uppercase;letter-spacing:.1em}
+.margin-note dd{margin:2px 0 0;font-size:15px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-flex;align-items:center;font:600 15px/1 var(--f-body);padding:14px 20px;border-radius:999px;text-decoration:none;border:1.5px solid var(--ink);color:var(--ink);background:transparent;transition:background .2s,color .2s}
+.btn.primary{background:var(--ink);color:var(--paper)}
+.btn:hover{background:var(--pencil);border-color:var(--pencil);color:#fff}
+
+section{padding-block:64px;border-top:1px solid var(--rule)}
+.sec-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:32px;margin-bottom:32px;align-items:end}
+.sec-head h2{font-family:var(--f-display);font-weight:700;font-size:clamp(26px,3.4vw,40px);line-height:1.1;letter-spacing:-.01em}
+.sec-head p{color:var(--ink-2);max-width:58ch}
+
+/* tabs */
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.tab{font:500 14.5px/1 var(--f-body);padding:11px 15px;min-height:42px;border-radius:999px;border:1px solid var(--rule);background:var(--sheet);color:var(--ink-2);cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.tab:hover{color:var(--ink);border-color:var(--ink-2)}
+.tab[aria-selected="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.tab span{font-family:var(--f-mono);font-size:11.5px;opacity:.65;margin-left:5px}
+.panel-title{display:none}
+.print-note{display:none}
+.panel-lead{color:var(--ink-2);margin-bottom:20px;max-width:70ch}
+
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+.card{background:var(--sheet);border:1px solid var(--rule);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.card.wide{grid-column:1 / -1}
+.media{background:var(--tint);display:flex;gap:10px;padding:16px;overflow-x:auto;scroll-snap-type:x mandatory;align-items:flex-start}
+.media button{all:unset;cursor:zoom-in;flex:0 0 auto;scroll-snap-align:start;border-radius:6px;overflow:hidden;box-shadow:0 1px 2px rgb(0 0 0 / .08),0 6px 18px rgb(0 0 0 / .08);transition:transform .2s}
+.media button:hover{transform:translateY(-2px)}
+.media button:focus-visible{outline:2px solid var(--pencil);outline-offset:3px}
+.media img{display:block;height:250px;width:auto;max-width:none}
+.media.tall img{height:330px}
+.media.short img{height:190px}
+.body{padding:18px 22px 22px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.meta{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.proj{font:600 12px/1 var(--f-body);color:var(--pencil);background:color-mix(in srgb,var(--pencil) 10%,transparent);padding:5px 8px;border-radius:4px}
+.spec{font-family:var(--f-mono);font-size:12px;color:var(--ink-2)}
+.card h4{font-size:18px;font-weight:600;line-height:1.3}
+.card p{color:var(--ink-2);font-size:15px}
+.link{font-weight:600;font-size:14.5px;align-self:flex-start}
+
+/* text posts */
+.post{padding:22px;display:flex;flex-direction:column;gap:12px}
+.post h4{font-size:17px;line-height:1.35}
+.post .txt{font-size:15.5px;line-height:1.6;color:var(--ink);display:grid;gap:10px}
+.post .txt p{color:var(--ink);font-size:15.5px}
+.post details summary{cursor:pointer;font-weight:600;font-size:14px;color:var(--cobalt);list-style:none;margin-top:4px}
+.post details summary::-webkit-details-marker{display:none}
+.post details[open] summary{margin-bottom:10px}
+.post b{font-weight:600}
+
+/* video */
+.ai-badge{display:inline-block;width:max-content;justify-self:start;align-self:start;font:500 11px/1 var(--f-mono);text-transform:uppercase;letter-spacing:.08em;color:var(--pencil);border:1px solid currentColor;border-radius:999px;padding:5px 9px}
+.vid{display:flex;gap:14px;padding:16px;background:var(--tint);flex-wrap:wrap;align-items:flex-start;justify-content:flex-start}
+.vid video{display:block;height:420px;width:auto;max-width:100%;border-radius:8px;background:#000}
+.vid .frames{display:flex;gap:10px}
+.vid .frames button{all:unset;cursor:zoom-in;border-radius:6px;overflow:hidden;box-shadow:0 1px 2px rgb(0 0 0 / .08),0 6px 18px rgb(0 0 0 / .08)}
+.vid .frames img{display:block;height:210px;width:auto}
+.steps{margin:4px 0 0;padding-left:18px;color:var(--ink-2);font-size:14.5px;display:grid;gap:2px}
+@media (max-width:560px){.vid video{height:360px}.vid .frames img{height:150px}}
+@media print{.vid video{display:none}}
+
+.plat{font-family:var(--f-mono);font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--pencil)}
+.aud{font-size:14px;color:var(--ink-2);margin-top:-6px}
+.sub-h{grid-column:1/-1;font-family:var(--f-display);font-size:20px;margin-top:20px}
+.sub-p{grid-column:1/-1;color:var(--ink-2);margin-top:-8px}
+.mailshot button{height:440px;overflow:hidden;cursor:zoom-in}
+.mailshot img{height:auto!important;width:250px}
+.tbl{overflow-x:auto}
+.tbl table{border-collapse:collapse;width:100%;font-size:14.5px;min-width:560px}
+.tbl th,.tbl td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--rule);vertical-align:top}
+.tbl th{font-family:var(--f-mono);font-size:11.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-2);font-weight:500}
+.mail{background:var(--paper);border:1px solid var(--rule);border-radius:8px;padding:20px 22px;max-width:640px;display:grid;gap:10px;font-size:15px}
+.mail ul{margin:0;padding-left:18px;display:grid;gap:3px}
+.m-h{font-size:14px;color:var(--ink-2);border-bottom:1px solid var(--rule);padding-bottom:10px}
+.m-sec{font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;color:var(--pencil);margin-top:6px}
+.m-btn{justify-self:start;background:var(--ink);color:var(--paper);border-radius:999px;padding:10px 16px;font-weight:600}
+.card details{margin-top:8px}
+.card details summary{cursor:pointer;font-weight:600;font-size:14px;color:var(--cobalt);list-style:none;margin-bottom:10px}
+.chain{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px}
+.ch{display:grid;gap:6px;align-content:start;min-width:0}
+.ch-when{min-height:2.7em;font-family:var(--f-mono);font-size:11.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--pencil)}
+.ch-subj{font-size:13.5px;font-weight:600;line-height:1.35;min-height:3.9em}
+.ch button{all:unset;cursor:zoom-in;display:block;height:300px;overflow:hidden;border-radius:6px;border:1px solid var(--rule);background:var(--tint)}
+.ch button:focus-visible{outline:2px solid var(--pencil);outline-offset:3px}
+.ch img{display:block;width:100%;height:auto}
+.ch-note{color:var(--ink-2);font-size:14px;margin-top:12px}
+@media (max-width:960px){.chain{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:560px){.chain{grid-template-columns:repeat(2,minmax(0,1fr))}.ch button{height:240px}}
+.media.fit{flex-wrap:wrap;overflow:visible;justify-content:flex-start}
+.media.fit img{height:250px}
+@media (max-width:560px){.media.fit button{flex:1 1 calc(50% - 5px)}.media.fit img{height:auto;width:100%}}
+.media.fit img{height:210px}
+.aut video{display:block;height:210px;width:auto;border-radius:6px;box-shadow:0 1px 2px rgb(0 0 0 / .08),0 6px 18px rgb(0 0 0 / .08)}
+@media (max-width:560px){.aut{flex:1 1 calc(50% - 5px)}.aut video{height:auto;width:100%}}
+/* flows */
+.flow{display:flex;flex-wrap:wrap;align-items:center;gap:8px;padding:18px 22px;background:var(--tint)}
+.flow .step{font-family:var(--f-mono);font-size:12.5px;background:var(--sheet);border:1px solid var(--rule);border-radius:6px;padding:8px 10px}
+.flow .arr{color:var(--pencil);font-family:var(--f-mono)}
+
+/* angles */
+.angles{display:grid;grid-template-columns:minmax(0,300px) minmax(0,1fr);gap:24px;align-items:start}
+.event{background:var(--ink);color:var(--paper);border-radius:var(--r);padding:22px;display:grid;gap:14px;position:sticky;top:80px}
+.event .label{color:color-mix(in srgb,var(--paper) 65%,transparent)}
+.event h3{font-family:var(--f-display);font-size:20px;line-height:1.2}
+.event p{font-size:14.5px;color:color-mix(in srgb,var(--paper) 80%,transparent)}
+.event .imgs{display:flex;gap:8px}
+.event .imgs button{all:unset;cursor:zoom-in;flex:1 1 0;min-width:0;border-radius:6px;overflow:hidden}
+.event .imgs img{display:block;width:100%;height:auto}
+.event ul{margin:0;padding-left:18px;font-size:14px;color:color-mix(in srgb,var(--paper) 80%,transparent);display:grid;gap:4px}
+.angle-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.angle{background:var(--sheet);border:1px solid var(--rule);border-radius:var(--r);padding:18px 20px;display:grid;gap:10px;align-content:start;min-width:0}
+.angle .who{display:flex;justify-content:space-between;gap:8px;align-items:baseline}
+.angle .who b{font-weight:600;font-size:15.5px}
+.angle .aud{font-size:13.5px;color:var(--ink-2)}
+.angle .hook{font-family:var(--f-mono);font-size:12px;color:var(--pencil);text-transform:uppercase;letter-spacing:.06em}
+.angle blockquote{margin:0;border-left:2px solid var(--rule);padding-left:12px;font-size:15px;line-height:1.55}
+
+/* projects */
+.projects{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.pcard{background:var(--sheet);border:1px solid var(--rule);border-radius:var(--r);padding:18px 20px;display:grid;gap:6px;align-content:start}
+.pcard b{font-size:16px;font-weight:600}
+.pcard .spec{margin-top:2px}
+.pcard p{color:var(--ink-2);font-size:14.5px}
+
+/* experience + contacts */
+.exp{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:48px}
+.timeline{list-style:none;margin:0;padding:0}
+.timeline li{display:grid;grid-template-columns:120px minmax(0,1fr);gap:20px;padding:14px 0;border-bottom:1px solid var(--rule)}
+.timeline .when{font-family:var(--f-mono);font-size:13px;color:var(--ink-2);font-variant-numeric:tabular-nums;padding-top:2px}
+.timeline b{display:block;font-weight:600}
+.timeline span{color:var(--ink-2);font-size:15px}
+.side{display:grid;gap:22px;align-content:start}
+.side h3{font-family:var(--f-display);font-size:17px;font-weight:700}
+.side p{color:var(--ink-2);margin-top:8px;font-size:15px}
+.toolbox{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.tag{font-family:var(--f-mono);font-size:11.5px;padding:4px 8px;border-radius:4px;background:var(--tint);color:var(--ink-2)}
+.contact{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:32px;align-items:center}
+.contact h2{font-family:var(--f-display);font-size:clamp(26px,3.4vw,40px);line-height:1.1;font-weight:700}
+.contact p.sub{color:var(--ink-2);margin-top:12px;max-width:44ch}
+.cards{display:grid;gap:12px}
+.cline{display:flex;justify-content:space-between;align-items:center;gap:12px;background:var(--sheet);border:1px solid var(--rule);border-radius:var(--r);padding:16px 18px}
+.cline .v{font-size:17px;font-weight:500;user-select:all;overflow-wrap:anywhere}
+.copy{font:500 13px/1 var(--f-body);border:1px solid var(--rule);background:transparent;color:var(--ink-2);border-radius:999px;padding:9px 12px;min-height:36px;cursor:pointer;flex:0 0 auto}
+.copy{text-decoration:none;display:inline-flex;align-items:center}
+.copy:hover{color:var(--ink);border-color:var(--ink-2)}
+footer{padding-block:28px 40px;color:var(--ink-2);font-size:13px;border-top:1px solid var(--rule)}
+
+dialog{border:0;padding:0;background:transparent;max-width:min(94vw,1100px);max-height:92vh}
+dialog::backdrop{background:rgb(10 12 18 / .82)}
+dialog img{display:block;max-width:min(94vw,1100px);max-height:84vh;width:auto;height:auto;border-radius:8px}
+dialog .cap{color:#fff;font-size:13px;margin-top:10px;display:flex;justify-content:space-between;gap:12px;align-items:center}
+dialog button{font:500 13px var(--f-body);color:#fff;background:rgb(255 255 255 / .16);border:0;border-radius:999px;padding:8px 14px;cursor:pointer}
+
+@media (max-width:960px){
+  .hero-grid,.sec-head,.exp,.contact,.angles{grid-template-columns:minmax(0,1fr);gap:28px}
+  .grid,.grid.three,.angle-list{grid-template-columns:minmax(0,1fr)}
+  .projects{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .event{position:static}
+}
+@media (max-width:560px){
+  .nav a:not(.keep){display:none}
+  .nav a{padding:6px 8px;font-size:13.5px}
+  .brand{font-size:13.5px}
+  .top .wrap{gap:8px}
+  .projects{grid-template-columns:minmax(0,1fr)}
+  .media img{height:210px}.media.tall img{height:280px}.media.short img{height:160px}
+  .timeline li{grid-template-columns:minmax(0,1fr);gap:4px}
+  section{padding-block:48px}
+  .hero{padding-block:44px 40px}
+  .intro{font-size:17px}.intro p:first-child{font-size:18px}
+}
+
+@media print{
+  .top,.tabs,.ctas,dialog,.copy,.nav{display:none!important}
+  [role="tabpanel"]{display:block!important;margin-bottom:28px}
+  .print-note{display:block!important}
+  .panel-title{display:block;font-family:var(--f-display);font-size:20px;margin:18px 0 14px;break-after:avoid}
+  .card,.angle,.pcard,.post,.timeline li,.cline,.event{break-inside:avoid}
+  .event{position:static}
+  details{display:block}details>*{display:block}
+  .media{overflow:visible;flex-wrap:wrap}
+  section{border-top:0;padding-block:24px}
+  body{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+
+.slider{position:relative;background:var(--tint)}
+.media.slides{flex-wrap:nowrap;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scroll-behavior:smooth;gap:12px;padding:18px 18px 44px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.media.slides::-webkit-scrollbar{display:none}
+.media.slides>*{flex:0 0 auto;scroll-snap-align:start}
+.media.slides img{height:440px;width:auto}
+.media.slides .aut video{height:440px;width:auto}
+.sl-btn{position:absolute;top:calc(50% - 30px);width:44px;height:44px;border-radius:50%;border:1px solid var(--rule);background:var(--sheet);color:var(--ink);font:400 26px/1 var(--f-body);cursor:pointer;box-shadow:0 2px 10px rgb(0 0 0 / .12);display:flex;align-items:center;justify-content:center;padding:0 0 3px}
+.sl-btn:disabled{opacity:0;pointer-events:none}
+.sl-prev{left:8px}.sl-next{right:8px}
+.sl-count{position:absolute;left:0;right:0;bottom:14px;text-align:center;font:500 12px/1 var(--f-mono);color:var(--ink-2);letter-spacing:.06em}
+@media (max-width:560px){.media.slides{padding:14px 14px 40px;gap:10px}.media.slides>*{flex:0 0 84%}.media.slides img,.media.slides .aut video{width:100%;height:auto}.sl-btn{display:none}}
+@media print{.sl-btn,.sl-count{display:none}.media.slides{flex-wrap:wrap;overflow:visible}.media.slides img,.media.slides .aut video{height:200px}}
+</style>
+
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top">Victoria Gribenko</a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#formats" class="keep">Formats</a>
+            <a href="#projects">Projects</a>
+      <a href="#contact" class="keep">Contact</a>
+      <a href="/" class="keep" lang="ru" hreflang="ru">RU</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap hero">
+    <p class="label">Copywriter · Editor · AI Creator</p>
+    <h1>Victoria Gribenko</h1>
+    <div class="hero-grid">
+      <div>
+        <div class="intro">
+          <p>I’m a copywriter and editor. I was writing copy long before AI tools came along, and before that I worked in sales and headed a sales department. I know marketing inside out: funnels, acquisition channels, nurture campaigns, email and CRM — and I understand the job each tool is meant to do. Everything I write starts from the audience’s goals and pain points and the business’s objectives.</p>
+          <p>Today AI is part of my everyday toolkit. With it, I single-handedly deliver what used to take a whole team.</p>
+          <p>Below is a selection of formats from my recent work.</p>
+        </div>
+        <div class="ctas">
+          <a class="btn primary" href="#formats">See my work</a>
+          <a class="btn" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <dl class="margin-note">
+        <div><dt>Sales</dt><dd>I headed a sales department, so I write copy that drives purchases, sign-ups and installs.</dd></div>
+        <div><dt>Education</dt><dd>Degree in linguistics and translation. I write and edit in Russian and English (C1).</dd></div>
+        <div><dt>Editing</dt><dd>Every figure is linked to its source, and every news item is fact-checked against primary sources.</dd></div>
+        <div><dt>Tools</dt><dd>Claude, Claude Code, SYNTX AI, Higgsfield, HeyGen, CapCut, InShot, Webflow, Tilda, Unisender, Selzy, Remotion.</dd></div>
+      </dl>
+    </div>
+  </div>
+
+  <!-- FORMATS -->
+  <section id="formats">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><p class="label">Formats</p><h2>What I do</h2></div>
+        <p>Click any image to see it full size.</p>
+      </div>
+
+      <div class="tabs" role="tablist" aria-label="Formats"><button class="tab" role="tab" id="t-car" aria-controls="p-car" aria-selected="true">Carousels</button><button class="tab" role="tab" id="t-meme" aria-controls="p-meme" aria-selected="false" tabindex="-1">Memes</button><button class="tab" role="tab" id="t-txt" aria-controls="p-txt" aria-selected="false" tabindex="-1">Posts</button><button class="tab" role="tab" id="t-art" aria-controls="p-art" aria-selected="false" tabindex="-1">Articles</button><button class="tab" role="tab" id="t-sto" aria-controls="p-sto" aria-selected="false" tabindex="-1">Stories</button><button class="tab" role="tab" id="t-web" aria-controls="p-web" aria-selected="false" tabindex="-1">Landing pages &amp; quizzes</button><button class="tab" role="tab" id="t-mail" aria-controls="p-mail" aria-selected="false" tabindex="-1">Email sequences</button><button class="tab" role="tab" id="t-mon" aria-controls="p-mon" aria-selected="false" tabindex="-1">Video editing</button><button class="tab" role="tab" id="t-vid" aria-controls="p-vid" aria-selected="false" tabindex="-1">AI avatars</button><button class="tab" role="tab" id="t-auto" aria-controls="p-auto" aria-selected="false" tabindex="-1">Automation</button></div>
+
+      <div role="tabpanel" id="p-car" aria-labelledby="t-car">
+        <h3 class="panel-title">Carousels</h3>
+        <p class="panel-lead">Instagram carousels. The first three are in Russian, the last two in English.</p>
+        <div class="grid"><article class="card wide"><div class="slider"><div class="media slides"><button data-full="../img/c171-1.webp" aria-label="Open slide 1"><img src="../img/c171-1.webp" alt="171 years to gender equality, slide 1" loading="lazy"></button><button data-full="../img/c171-2.webp" aria-label="Open slide 2"><img src="../img/c171-2.webp" alt="171 years to gender equality, slide 2" loading="lazy"></button><button data-full="../img/c171-3.webp" aria-label="Open slide 3"><img src="../img/c171-3.webp" alt="171 years to gender equality, slide 3" loading="lazy"></button><button data-full="../img/c171-4.webp" aria-label="Open slide 4"><img src="../img/c171-4.webp" alt="171 years to gender equality, slide 4" loading="lazy"></button><button data-full="../img/c171-5.webp" aria-label="Open slide 5"><img src="../img/c171-5.webp" alt="171 years to gender equality, slide 5" loading="lazy"></button><button data-full="../img/c171-6.webp" aria-label="Open slide 6"><img src="../img/c171-6.webp" alt="171 years to gender equality, slide 6" loading="lazy"></button><button data-full="../img/c171-7.webp" aria-label="Open slide 7"><img src="../img/c171-7.webp" alt="171 years to gender equality, slide 7" loading="lazy"></button><button data-full="../img/c171-8.webp" aria-label="Open slide 8"><img src="../img/c171-8.webp" alt="171 years to gender equality, slide 8" loading="lazy"></button><button data-full="../img/c171-9.webp" aria-label="Open slide 9"><img src="../img/c171-9.webp" alt="171 years to gender equality, slide 9" loading="lazy"></button><button data-full="../img/c171-10.webp" aria-label="Open slide 10"><img src="../img/c171-10.webp" alt="171 years to gender equality, slide 10" loading="lazy"></button></div><button class="sl-btn sl-prev" type="button" aria-label="Previous slide">‹</button><button class="sl-btn sl-next" type="button" aria-label="Next slide">›</button><div class="sl-count" aria-live="polite"></div></div><div class="body"><a class="link" href="https://www.instagram.com/p/DdbcfkHDeip/" target="_blank" rel="noopener">View on Instagram ↗</a></div></article><article class="card wide"><div class="slider"><div class="media slides"><button data-full="../img/cclub-1.webp" aria-label="Open slide 1"><img src="../img/cclub-1.webp" alt="Launching the Biohacking Club, slide 1" loading="lazy"></button><button data-full="../img/cclub-2.webp" aria-label="Open slide 2"><img src="../img/cclub-2.webp" alt="Launching the Biohacking Club, slide 2" loading="lazy"></button><button data-full="../img/cclub-3.webp" aria-label="Open slide 3"><img src="../img/cclub-3.webp" alt="Launching the Biohacking Club, slide 3" loading="lazy"></button><button data-full="../img/cclub-4.webp" aria-label="Open slide 4"><img src="../img/cclub-4.webp" alt="Launching the Biohacking Club, slide 4" loading="lazy"></button><button data-full="../img/cclub-5.webp" aria-label="Open slide 5"><img src="../img/cclub-5.webp" alt="Launching the Biohacking Club, slide 5" loading="lazy"></button><button data-full="../img/cclub-6.webp" aria-label="Open slide 6"><img src="../img/cclub-6.webp" alt="Launching the Biohacking Club, slide 6" loading="lazy"></button><button data-full="../img/cclub-7.webp" aria-label="Open slide 7"><img src="../img/cclub-7.webp" alt="Launching the Biohacking Club, slide 7" loading="lazy"></button></div><button class="sl-btn sl-prev" type="button" aria-label="Previous slide">‹</button><button class="sl-btn sl-next" type="button" aria-label="Next slide">›</button><div class="sl-count" aria-live="polite"></div></div><div class="body"><a class="link" href="https://www.instagram.com/p/DdTfAIpjZEn/" target="_blank" rel="noopener">View on Instagram ↗</a></div></article><article class="card wide"><div class="slider"><div class="media slides"><div class="aut"><video autoplay muted loop playsinline preload="metadata" poster="../img/aut-1.webp" aria-label="Slide 1"><source src="../media/aut1.mp4" type="video/mp4"></video></div><div class="aut"><video autoplay muted loop playsinline preload="metadata" poster="../img/aut-2.webp" aria-label="Slide 2"><source src="../media/aut2.mp4" type="video/mp4"></video></div><div class="aut"><video autoplay muted loop playsinline preload="metadata" poster="../img/aut-3.webp" aria-label="Slide 3"><source src="../media/aut3.mp4" type="video/mp4"></video></div><div class="aut"><video autoplay muted loop playsinline preload="metadata" poster="../img/aut-4.webp" aria-label="Slide 4"><source src="../media/aut4.mp4" type="video/mp4"></video></div><div class="aut"><video autoplay muted loop playsinline preload="metadata" poster="../img/aut-5.webp" aria-label="Slide 5"><source src="../media/aut5.mp4" type="video/mp4"></video></div><div class="aut"><video autoplay muted loop playsinline preload="metadata" poster="../img/aut-6.webp" aria-label="Slide 6"><source src="../media/aut6.mp4" type="video/mp4"></video></div><div class="aut"><video autoplay muted loop playsinline preload="metadata" poster="../img/aut-7.webp" aria-label="Slide 7"><source src="../media/aut7.mp4" type="video/mp4"></video></div></div><button class="sl-btn sl-prev" type="button" aria-label="Previous slide">‹</button><button class="sl-btn sl-next" type="button" aria-label="Next slide">›</button><div class="sl-count" aria-live="polite"></div></div><div class="body"><a class="link" href="https://www.instagram.com/p/Dd33ASfErJe/" target="_blank" rel="noopener">View on Instagram ↗</a></div></article><article class="card wide"><div class="slider"><div class="media slides"><button data-full="../img/csharp-1.webp" aria-label="Open slide 1"><img src="../img/csharp-1.webp" alt="Beyond Self-Doubt, slide 1" loading="lazy"></button><button data-full="../img/csharp-2.webp" aria-label="Open slide 2"><img src="../img/csharp-2.webp" alt="Beyond Self-Doubt, slide 2" loading="lazy"></button><button data-full="../img/csharp-3.webp" aria-label="Open slide 3"><img src="../img/csharp-3.webp" alt="Beyond Self-Doubt, slide 3" loading="lazy"></button><button data-full="../img/csharp-4.webp" aria-label="Open slide 4"><img src="../img/csharp-4.webp" alt="Beyond Self-Doubt, slide 4" loading="lazy"></button><button data-full="../img/csharp-5.webp" aria-label="Open slide 5"><img src="../img/csharp-5.webp" alt="Beyond Self-Doubt, slide 5" loading="lazy"></button><button data-full="../img/csharp-6.webp" aria-label="Open slide 6"><img src="../img/csharp-6.webp" alt="Beyond Self-Doubt, slide 6" loading="lazy"></button><button data-full="../img/csharp-7.webp" aria-label="Open slide 7"><img src="../img/csharp-7.webp" alt="Beyond Self-Doubt, slide 7" loading="lazy"></button><button data-full="../img/csharp-8.webp" aria-label="Open slide 8"><img src="../img/csharp-8.webp" alt="Beyond Self-Doubt, slide 8" loading="lazy"></button></div><button class="sl-btn sl-prev" type="button" aria-label="Previous slide">‹</button><button class="sl-btn sl-next" type="button" aria-label="Next slide">›</button><div class="sl-count" aria-live="polite"></div></div></article><article class="card wide"><div class="slider"><div class="media slides"><button data-full="../img/cpw-1.webp" aria-label="Open slide 1"><img src="../img/cpw-1.webp" alt="Perimenopause at work, slide 1" loading="lazy"></button><button data-full="../img/cpw-2.webp" aria-label="Open slide 2"><img src="../img/cpw-2.webp" alt="Perimenopause at work, slide 2" loading="lazy"></button><button data-full="../img/cpw-3.webp" aria-label="Open slide 3"><img src="../img/cpw-3.webp" alt="Perimenopause at work, slide 3" loading="lazy"></button><button data-full="../img/cpw-4.webp" aria-label="Open slide 4"><img src="../img/cpw-4.webp" alt="Perimenopause at work, slide 4" loading="lazy"></button><button data-full="../img/cpw-5.webp" aria-label="Open slide 5"><img src="../img/cpw-5.webp" alt="Perimenopause at work, slide 5" loading="lazy"></button><button data-full="../img/cpw-6.webp" aria-label="Open slide 6"><img src="../img/cpw-6.webp" alt="Perimenopause at work, slide 6" loading="lazy"></button><button data-full="../img/cpw-7.webp" aria-label="Open slide 7"><img src="../img/cpw-7.webp" alt="Perimenopause at work, slide 7" loading="lazy"></button><button data-full="../img/cpw-8.webp" aria-label="Open slide 8"><img src="../img/cpw-8.webp" alt="Perimenopause at work, slide 8" loading="lazy"></button><button data-full="../img/cpw-9.webp" aria-label="Open slide 9"><img src="../img/cpw-9.webp" alt="Perimenopause at work, slide 9" loading="lazy"></button><button data-full="../img/cpw-10.webp" aria-label="Open slide 10"><img src="../img/cpw-10.webp" alt="Perimenopause at work, slide 10" loading="lazy"></button></div><button class="sl-btn sl-prev" type="button" aria-label="Previous slide">‹</button><button class="sl-btn sl-next" type="button" aria-label="Next slide">›</button><div class="sl-count" aria-live="polite"></div></div></article></div>
+      </div>
+      <div role="tabpanel" id="p-meme" aria-labelledby="t-meme" hidden>
+        <h3 class="panel-title">Memes</h3>
+        <p class="panel-lead">Memes for Instagram, mostly in Russian.</p>
+        <div class="grid"><article class="card"><div class="media tall"><button data-full="../img/meme-1.webp" aria-label="Open"><img src="../img/meme-1.webp" alt="Meme: magnesium" loading="lazy"></button><button data-full="../img/meme-2.webp" aria-label="Open"><img src="../img/meme-2.webp" alt="Meme: multivitamins" loading="lazy"></button><button data-full="../img/meme-3.webp" aria-label="Open"><img src="../img/meme-3.webp" alt="Meme: fat burners" loading="lazy"></button></div><div class="body"><a class="link" href="https://www.instagram.com/p/DfOqRV9kblF/" target="_blank" rel="noopener">View on Instagram ↗</a></div></article><article class="card"><div class="media tall"><button data-full="../img/meme-brain.webp" aria-label="Open"><img src="../img/meme-brain.webp" alt="Meme: how we explain our symptoms to ourselves" loading="lazy"></button><button data-full="../img/meme-libido.webp" aria-label="Open"><img src="../img/meme-libido.webp" alt="Meme: my libido at 9 p.m." loading="lazy"></button><button data-full="../img/ig-meme2.webp" aria-label="Open"><img src="../img/ig-meme2.webp" alt="My confidence in a supplement" loading="lazy"></button></div><div class="body"><a class="link" href="https://www.instagram.com/p/DcyMxx5DSFY/" target="_blank" rel="noopener">View on Instagram ↗</a></div></article></div>
+      </div>
+      <!-- texts -->
+      <div role="tabpanel" id="p-txt" aria-labelledby="t-txt" hidden>
+        <h3 class="panel-title">Posts</h3>
+        <p class="panel-lead">Samples in Russian: posts and announcements written for Russian-speaking audiences. The labels show each channel and its audience.</p>
+        <div class="grid"><article class="card post wide"><p class="plat">Telegram · Female Founder</p><p class="aud">Sample in Russian · News post: three in four women who froze their eggs never come back to use them (data on 20,209 women)</p><div class="txt"><p><b>Три из четырёх женщин так и не возвращаются за замороженными яйцеклетками</b></p><p>Австралийские учёные изучили данные клиник о 20 209 женщинах из Австралии и Новой Зеландии. Все они заморозили яйцеклетки в 2009–2023 годах без медицинских причин, просто чтобы родить позже.</p><p>Выяснилось, что за 14 лет таких женщин стало почти в 90 раз больше. Но воспользоваться яйцеклетками решаются немногие: за 10 лет за ними вернулись только 28%. Те, кто всё-таки вернулся, делали это в среднем через 4,9 года. Ребёнок в итоге родился примерно у трети из них.</p><p>Чаще всего яйцеклетки замораживают, когда нет партнёра, с которым хочется растить ребёнка. Само решение даётся непросто: больше трёх из четырёх женщин сомневаются, правильно ли поступают.</p></div></article><article class="card post wide"><p class="plat">Telegram · Female Founder</p><p class="aud">Sample in Russian · A post on the diet industry and its impact on women and girls that leads into a webinar announcement</p><div class="txt"><p>Стали разбирать исследования и статистику о снижении веса, и до сих пор не можем прийти в себя. Знали, что диеты — огромная индустрия. Но не думали, что настолько.</p><p>91% женщин хотя бы раз пытались контролировать вес диетой. И больше 80% тех, кто сидел на низкокалорийной, за пять лет возвращают всё сброшенное, и платят снова.</p><p>Сильнее всего задели цифры про детей. <b>39% девочек к 14 годам уже сидели на диете</b>. У девочек, которые жёстко ограничивают себя в еде, риск расстройства пищевого поведения в 18 раз выше. А ещё совсем недавно существовало <b>приложение для похудения, куда принимали детей с восьми лет</b> (!!!).</p><p>Мы за заботу о теле. Но не за то, чтобы с детства учить девочек, что с ними что-то не так.</p></div><details><summary>Read in full</summary><div class="txt"><p>Поэтому напоминаем: <b>8 октября в 18:00 по Москве — <a href="https://club.miranna.io/?utm_source=tgff&amp;utm_medium=tgff&amp;utm_campaign=tgff&amp;utm_content=tgff" target="_blank" rel="noopener">первая встреча нашего биохакинг-клуба</a> с врачом-эндокринологом Евгенией Соколовой.</b></p><p><b>Тема</b>: почему вес встал после 30 и как его сдвинуть. Без детоксов, марафонов силы воли и очередной диеты.</p><p>Евгения — главный врач петербургской «Клиники Фомина»: команда из 100+ врачей и больше 35 000 пациентов в год.</p><p>Обучает эндокринологов в 20+ странах, руководит первой в России магистратурой по общественному здоровью в ИТМО. И умеет объяснять сложную биохимию нормальным языком.</p><p><b>Что разберём:</b><br>→ почему вес может стоять, даже если вы едите немного: отёки, стресс, нарушения насыщения, сахарные качели;<br>→ что делает врач, когда вес встал: что проверять первым, а что не имеет смысла;<br>→ силовые после 30: сколько нужно и почему одного кардио мало;<br>→ почему дисциплина не работает и как выстроить привычки без опоры на силу воли.<br>→ два реальных клинических кейса женщин 28 и 35+.</p><p><b>С чем уйдёте:</b> схема застоя веса по симптомам, пошаговый алгоритм, приёмы автоматизации привычек и чек-лист — когда идти к врачу и что делать не нужно. В конце можно задать доктору свой вопрос в эфире.</p><p>Кажется, эти знания нам нужны уже не только для себя, но и для наших детей — чтобы они росли с другим отношением к телу и еде.</p><p>Приходите, поговорим.</p><p>Онлайн в Zoom, 45 минут.<br><a href="https://club.miranna.io/?utm_source=tgff&amp;utm_medium=tgff&amp;utm_campaign=tgff&amp;utm_content=tgff" target="_blank" rel="noopener">Регистрация здесь</a></p><p>Мест осталось не так много, не ждите 🫶</p></div></details></article><h4 class="sub-h">One announcement, many channels</h4><p class="sub-p">A webinar with a gynecologist on perimenopause (October 29): one announcement rewritten for each platform and its audience. Samples in Russian.</p><article class="card post"><p class="plat">Telegram · Female Founder, our channel</p><p class="aud">Audience: women founders and entrepreneurs</p><div class="txt"><p>Только 14% женщин сразу узнают в своих симптомах перименопаузу.</p><p>Остальные 86% ищут причину где угодно. В <a href="https://femtechinsider.com/?p=35994" target="_blank" rel="noopener">опросе ThisIsMenopause</a> 82% сначала списали симптомы на стресс, выгорание или тревогу. Многим врачи говорили: «Вы слишком молоды».</p><p><a href="https://www.uvahealth.com/news/young-women-suffering-menopause-symptoms-in-silence" target="_blank" rel="noopener">Еще одно исследование</a> показало, что тревога, раздражительность и подавленность часто появляются раньше, чем приливы или сбои цикла, — поэтому их так легко принять за «просто нервы».</p></div><details><summary>Read in full</summary><div class="txt"><p>Узнаёте? Сон стал поверхностным, тревога появляется без повода, раздражение на близких, слова теряются посреди фразы. Цикл вроде как часы, анализы в норме. И кажется, всё объяснимо: проекты, дети, дедлайны, усталость.</p><p>А теперь важное: перименопауза может начаться за 8–10 лет до последней менструации — у части женщин уже в середине 30-х. Она не начинается с приливов и не ждёт 50 лет. Мы привыкли планировать бизнес и карьеру — но не этот этап. А чем раньше понимаешь, что происходит, тем больше можешь сделать: сохранить мышцы и кости, разобраться со сном и самочувствием и вовремя обсудить с врачом МГТ — по фактам, а не по слухам из чатов.</p><p>Поэтому 29 октября в нашем биохакинг-клубе — онлайн-встреча с врачом-гинекологом:</p><p>«Перименопауза: что стоит знать уже в 35. Что делать заранее и когда рассматривать МГТ».</p><p>Что разберём<br>— Что делать уже сейчас, даже если ничего не беспокоит: как заботиться о мышцах, костях и самочувствии без тревоги. И правда ли, что после 35 организм неизбежно меняется к худшему.<br>— Что может стоять за изменениями: на конкретных сценариях — нерегулярный цикл, нарушения сна, приливы, необычные кровотечения. Что это может значить и когда важно не откладывать визит к врачу.<br>— Какие обследования действительно помогают: почему нет универсального списка анализов «на перименопаузу», что может и чего не может показать АМГ и почему результаты нельзя читать отдельно от симптомов и возраста.<br>— МГТ без мифов: когда её стоит обсуждать с врачом, чем системная терапия отличается от местного лечения, честный разбор страхов «гормоны вызывают рак?» и «а тромбозы?»; альтернативы и ограничения.<br>— Как подготовиться к приёму: что записать о цикле и самочувствии и какие вопросы задать, чтобы выйти с планом, а не с «это возраст».</p><p>С чем уйдёте<br>→ Один посильный шаг для здоровья, который можно начать уже на этой неделе.<br>→ Список вопросов для врача: что обсудить на приёме, какие обследования могут быть обоснованы и что уточнить, если вы думаете о МГТ.<br>→ Понимание, какие изменения требуют оценки врача и что не стоит списывать на возраст или гормоны.<br>→ Дневник цикла и симптомов — чтобы заметить изменения и прийти на консультацию подготовленной.<br>→ Ответы на ваши вопросы: последние 20 минут — живой разговор с врачом.</p><p>Ведёт Валерия Метальникова — врач-гинеколог клиники доказательной медицины «Наше время» (Москва).</p><p>• Клинический опыт: роддом ГКБ № 52 и отделение гинекологии Флагманского центра экстренной медицинской помощи Первой градской больницы им. Пирогова.<br>• Пять лет занимается медицинским просвещением и ведёт блог о женском здоровье «Врач маминой подруги».<br>• Развивает образовательный проект «Гинеколог и Я»: открытые лекции, лектории и методические материалы для студентов-медиков, молодых врачей и всех, кому интересно женское здоровье — на основе российских и зарубежных научных данных</p><p>Врач, который делает гинекологию понятнее, доступнее и бережнее, чтобы о своём здоровье можно было говорить без стыда и страха.</p><p>🗓 29 октября, 18:30 по Москве<br>💻 Онлайн: 40 минут лекции + 20 минут ответов на ваши вопросы<br>🎥 Запись пришлём всем участницам<br>👉 <a href="https://club.miranna.io/?utm_source=tg_female_founder&amp;utm_medium=tg_female_founder&amp;utm_campaign=tg_female_founder" target="_blank" rel="noopener">Регистрация здесь</a></p></div></details></article><article class="card post"><p class="plat">Instagram · miranna.io</p><p class="aud">Audience: the brand’s followers, a warm audience</p><div class="txt"><p>Только 14% женщин сразу узнают в своих симптомах перименопаузу. Остальные ищут причину в чём угодно, кроме неё.</p><p>Это данные опроса 1 000 женщин (ThisIsMenopause, 2026): 82% сначала списали свои симптомы на стресс, выгорание или тревогу. А многим врачи говорили: «Вы слишком молоды».</p><p>Плохо спишь, хотя к вечеру нет сил. Тревога без повода, раздражаешься на близких, забываешь слова посреди фразы. Цикл вроде как часы, анализы в норме. Кажется, всё понятно: работа, дети, усталость.</p></div><details><summary>Read in full</summary><div class="txt"><p>А если нет?</p><p>Перименопауза не начинается с приливов и не ждёт 50 лет. И чем раньше понимаешь, что происходит, тем больше можешь сделать: поддержать мышцы и кости, спокойно разобраться с самочувствием и вовремя обсудить с врачом МГТ — по фактам, а не по слухам.</p><p>Об этом 29 октября — онлайн-встреча Биохакинг-клуба Miranna с врачом-гинекологом: «Перименопауза: что стоит знать уже в 35. Что делать заранее и когда рассматривать МГТ».</p><p>Что разберём:<br>— что делать уже сейчас, даже если ничего не беспокоит;<br>— что может стоять за изменениями цикла, сна, приливами и необычными кровотечениями — и когда важно идти к врачу;<br>— какие обследования правда помогают и почему универсального списка анализов нет;<br>— МГТ без мифов: «гормоны вызывают рак?», «а тромбозы?», альтернативы и ограничения;<br>— как подготовиться к приёму, чтобы выйти с планом, а не с «это возраст».</p><p>С чем уйдёте:<br>→ один посильный шаг для здоровья на ближайшую неделю;<br>→ список вопросов для врача, в том числе про МГТ;<br>→ понимание, что не стоит откладывать и списывать на гормоны;<br>→ дневник цикла и симптомов.</p><p>Ведёт Валерия Метальникова — гинеколог клиники доказательной медицины «Наше время». Опыт в роддоме ГКБ № 52 и экстренной гинекологии Первой градской, 5 лет объясняет женское здоровье простыми словами в блоге «Врач маминой подруги». Без запугивания и стыда.</p><p>🗓 29 октября, 18:30 МСК<br>💻 Онлайн: 40 минут лекции + 20 минут ваших вопросов<br>💳 990 ₽, запись — всем, кто оплатил<br>👉 Регистрация: https://club.miranna.io/?utm_source=instagram&amp;utm_medium=post&amp;utm_campaign=webinar02_perimenopause&amp;utm_content=announce</p><p>Встреча образовательная и не заменяет приём врача.</p></div></details></article><article class="card post"><p class="plat">Telegram · “Cold Shower” community, 3-day reminder</p><p class="aud">Audience: members of our community</p><div class="txt"><p>Как мы обычно объясняем себе симптомы 🧠</p><p>Плохо сплю — наверное, кофе.<br>Срываюсь на близких — наверное, работа.<br>Всё сразу — наверное, ретроградный Меркурий.</p><p>Сразу узнают в этом перименопаузу только 14% женщин. Остальные годами перебирают версии, хотя она может начаться уже в середине 30-х.</p></div><details><summary>Read in full</summary><div class="txt"><p>Через 3 дня, 29 октября в 18:30, переходим сразу к последней стадии — спрашиваем гинеколога. Валерия Метальникова разберёт, где заканчивается стресс и начинается перименопауза, что делать заранее и что правда, а что мифы про МГТ.</p><p>40 минут разбора + 20 минут ваших вопросов, запись получат все участницы.</p><p>👉 Регистрация</p><p>Пишите в комментариях, что хотите спросить у врача, — соберём и зададим 🤍</p></div></details></article><article class="card post"><p class="plat">Telegram · No Borders for Women, paid placement</p><p class="aud">Audience: 22K subscribers; careers, jobs and programs for women</p><div class="txt"><p>🩺 Онлайн-встреча Биохакинг-клуба Miranna с врачом-гинекологом «Перименопауза: что стоит знать уже в 35»</p><p>Плохой сон, тревога, «туман» в голове и раздражение часто приходят на пике карьеры, в 35–45. Их легко принять за выгорание и годами лечить отпуском. А это может быть перименопауза: она может начаться за 8–10 лет до менопаузы, но сразу узнают её только 14% женщин.</p><p>В британском опросе Fawcett Society каждая десятая женщина, работавшая в период менопаузы, ушла с работы из-за симптомов. Многое из этого можно обсудить с врачом заранее, чтобы встретить этот этап подготовленной. Как раз для этого в Биохакинг-клубе Miranna врачи разбирают темы женского здоровья по данным исследований и в прямом эфире отвечают на вопросы участниц.</p></div><details><summary>Read in full</summary><div class="txt"><p>Где: онлайн<br>Когда: 29 октября, 18:30 МСК<br>Ведёт: Валерия Метальникова, врач-гинеколог клиники доказательной медицины «Наше время» (Москва), автор блога «Врач маминой подруги»<br>В программе:<br>— как отличить перименопаузу от стресса и выгорания<br>— что делать уже сейчас, чтобы сохранить сон, мышцы и кости<br>— какие обследования правда нужны<br>— менопаузальная гормональная терапия без мифов: когда её обсуждать с врачом<br>— ответы на вопросы в прямом эфире<br>Условия: участие платное, запись получат все участницы. Количество мест ограничено<br>Регистрация</p><p>❄️ О женском здоровье без воды и мифов — в бесплатном сообществе «Холодный душ»</p></div></details></article><article class="card post"><p class="plat">Telegram · Femtech Force, paid placement</p><p class="aud">Audience: a femtech media outlet, readers aged 25–35</p><div class="txt"><p><b>Знаете, во сколько лет у вашей мамы началась менопауза?</b><br>Большинство не знает. А это одна из главных подсказок о том, когда она начнётся у вас.</p><p>Возраст менопаузы во многом передаётся по наследству: в исследовании пар мать–дочь гены объясняли около 44% разницы. А перестройка начинается раньше — перименопауза может стартовать за 8–10 лет до последних месячных, то есть у части женщин уже в середине 30-х. Сразу узнают её только 14%: остальные списывают сон, тревогу и раздражение на стресс.</p><p>Мы первое поколение, которое может подготовиться к этому этапу заранее, а не просто терпеть, как наши мамы и бабушки. Для этого нужно знать, что с нами происходит, — и лучше узнать это от врача, а не из рилсов.</p></div><details><summary>Read in full</summary><div class="txt"><p>29 октября в Биохакинг-клубе Miranna разберём это с врачом-гинекологом Валерией Метальниковой (клиника доказательной медицины «Наше время», блог «Врач маминой подруги»).</p><p>Что разберём подробно:<br>✨ что значит ваша семейная история и как понять, когда этап может начаться у вас<br>✨ что может стоять за изменениями цикла, сна и настроения — и как отличить их от стресса и выгорания<br>✨ что делать уже сейчас, даже если ничего не беспокоит: как сохранить мышцы, кости и крепкий сон<br>✨ какие обследования правда помогают и что может (и не может) показать АМГ<br>✨ менопаузальную гормональную терапию без мифов: когда её обсуждать и честно о страхе «гормоны вызывают рак?»<br>✨ как подготовиться к приёму, чтобы выйти с планом, а не с «это возраст»</p><p>С чем вы уйдёте:<br>→ один посильный шаг для здоровья уже на этой неделе<br>→ список вопросов для врача, в том числе про МГТ<br>→ дневник цикла и самочувствия<br>→ ответы на свои вопросы в прямом эфире</p><p>🗓 29 октября, 18:30 МСК, онлайн<br>🎥 запись получат все участницы<br>Мест ограниченное количество, чтобы врач успела ответить всем.</p><p>👉 Регистрация</p><p>А если мама так и не рассказала, как это было у неё, — приходите вместе. Или подарите ей эту встречу 🤍</p></div></details></article><article class="card post"><p class="plat">Telegram · “Ogon” (Fire), paid placement</p><p class="aud">Audience: a city channel in Krasnodar</p><div class="txt"><p>🔥 «Ты слишком молода для этого»: почему женщинам после 30 не объясняют, что с ними происходит</p><p>Плохой сон, тревога без повода, раздражение на близких. Анализы в норме, цикл как часы, а в ответ слышишь: «Это стресс, вы слишком молоды» 🙃</p><p>А это может быть перименопауза. Она начинается за 8–10 лет до менопаузы, у части женщин уже в середине 30-х. Но сразу узнают её только 14% женщин.</p></div><details><summary>Read in full</summary><div class="txt"><p>Мы первое поколение, которое может подготовиться к этому этапу заранее, а не просто терпеть, как наши мамы и бабушки. Для этого нужно знать, что с нами происходит. Поговорить об этом с врачом можно 29 октября на онлайн-встрече Биохакинг-клуба Miranna «Перименопауза: что стоит знать уже в 35».</p><p>👩‍⚕️ Ведёт Валерия Метальникова, врач-гинеколог клиники доказательной медицины «Наше время» (Москва). Клинический опыт в роддоме ГКБ № 52 и в экстренной гинекологии Первой градской больницы. Пять лет объясняет женское здоровье простыми словами в блоге «Врач маминой подруги». Говорит о сложном спокойно, без запугивания и стыда.</p><p>Что разберём подробно:<br>✨ что делать уже сейчас, даже если ничего не беспокоит: как сохранить мышцы, кости и крепкий сон<br>✨ что может стоять за изменениями цикла, сна и настроения<br>✨ какие обследования правда помогают и что может (и не может) показать АМГ<br>✨ менопаузальную гормональную терапию (МГТ) без мифов: когда её обсуждать и честно о страхах «гормоны вызывают рак?»<br>✨ как подготовиться к приёму, чтобы выйти с планом, а не с «это возраст»</p><p>С чем уйдёшь:<br>→ один посильный шаг для здоровья уже на этой неделе<br>→ список вопросов для врача, в том числе про МГТ<br>→ дневник цикла и самочувствия<br>→ ответы на свои вопросы в прямом эфире</p><p>🗓 29 октября в 18:30 МСК<br>💻 онлайн: 40 минут разбора + 20 минут вопросов<br>🎥 запись пришлём всем участницам<br>👉 Регистрация здесь</p><p>Мест на встрече ограниченное количество, чтобы врач успела ответить на вопросы. Если тема откликается, лучше занять место заранее 🤍</p><p>❄️ А ещё у Miranna есть бесплатное сообщество о женском здоровье «Холодный душ». Присоединяйся здесь</p></div></details></article></div>
+      </div>
+
+      <!-- articles -->
+      <div role="tabpanel" id="p-art" aria-labelledby="t-art" hidden>
+        <h3 class="panel-title">Articles</h3>
+        
+        <div class="grid"><article class="card post"><p class="plat">Unisender blog · RU</p><p class="aud">Sample in Russian · “Viber campaigns: a beginner’s guide”</p><h4>Рассылки в Viber: путеводитель для чайников</h4><div class="txt"><p>Viber — один из самых популярных мессенджеров в мире, им пользуются больше 800 млн человек. Популярный, удобный, недорогой — вот вам и востребованный маркетинговый канал.</p></div><a class="link" href="https://www.unisender.com/ru/blog/gid-po-rassylkam-v-viber/" target="_blank" rel="noopener">Read the article ↗</a></article>
+          <article class="card post">
+            
+            <h4>Menopause Myths: 8 Things You Were Told That Aren't True</h4>
+            <div class="txt"><p>Here is the strange thing about menopause information. It is not that there is too little of it. It is that so much of what circulates is either thirty years out of date or attached to a product.</p></div>
+            <a class="link" href="https://miranna.com/blog/menopause-myths" target="_blank" rel="noopener">Read the article ↗</a>
+          </article>
+          <article class="card post">
+            
+            <h4>Menopause and Anger Toward Your Husband: Why It Happens</h4>
+            <div class="txt"><p>You are furious at the way he breathes. At the question about where the scissors are. At the fact that he asked what is for dinner in a tone that was, objectively, neutral.</p></div>
+            <a class="link" href="https://miranna.com/blog/menopause-and-your-relationship" target="_blank" rel="noopener">Read the article ↗</a>
+          </article>
+          <article class="card post">
+            
+            <h4>Atomic Habits Summary: The Core Ideas in 10 Minutes</h4>
+            <div class="txt"><p>The book has sold well over twenty million copies, which usually means the ideas have been flattened into infographics that miss the point.</p></div>
+            <a class="link" href="https://miranna.com/blog/atomic-habits-summary" target="_blank" rel="noopener">Read the article ↗</a>
+          </article>
+          <article class="card post">
+            
+            <h4>How to Build a Habit That Survives a Real Week</h4>
+            <div class="txt"><p>To build a habit, make it small enough to do on your worst day, attach it to something that already happens reliably, and remove one step of friction before you start.</p></div>
+            <a class="link" href="https://miranna.com/blog/how-to-build-a-habit" target="_blank" rel="noopener">Read the article ↗</a>
+          </article>
+        </div>
+      </div>
+
+      <div role="tabpanel" id="p-sto" aria-labelledby="t-sto" hidden>
+        <h3 class="panel-title">Stories</h3>
+        <p class="panel-lead">Instagram and Telegram Stories, mostly in Russian.</p>
+        <div class="grid"><article class="card wide"><div class="media tall"><button data-full="../img/st-myth.webp" aria-label="Open"><img src="../img/st-myth.webp" alt="True or myth" loading="lazy"></button><button data-full="../img/st-gift.webp" aria-label="Open"><img src="../img/st-gift.webp" alt="Gift it to your mom" loading="lazy"></button><button data-full="../img/st-book.webp" aria-label="Open"><img src="../img/st-book.webp" alt="The Menopause Brain" loading="lazy"></button><button data-full="../img/st-tomorrow.webp" aria-label="Open"><img src="../img/st-tomorrow.webp" alt="Tomorrow at 6:30 p.m." loading="lazy"></button><button data-full="../img/st-meme.webp" aria-label="Open"><img src="../img/st-meme.webp" alt="Sound familiar?" loading="lazy"></button></div></article><article class="card wide"><div class="media tall"><button data-full="../img/st-case.webp" aria-label="Open"><img src="../img/st-case.webp" alt="A story from the doctor’s office" loading="lazy"></button><button data-full="../img/st-gas.webp" aria-label="Open"><img src="../img/st-gas.webp" alt="Gas and brake" loading="lazy"></button><button data-full="../img/st-lab.webp" aria-label="Open"><img src="../img/st-lab.webp" alt="Lab tests" loading="lazy"></button><button data-full="../img/st-sleep.webp" aria-label="Open"><img src="../img/st-sleep.webp" alt="Tracking sleep" loading="lazy"></button><button data-full="../img/peri-a1.webp" aria-label="Open"><img src="../img/peri-a1.webp" alt="07:00" loading="lazy"></button></div></article><article class="card wide"><div class="media tall"><button data-full="../img/mark-s1.webp" aria-label="Open"><img src="../img/mark-s1.webp" alt="Health markers" loading="lazy"></button><button data-full="../img/mark-s2.webp" aria-label="Open"><img src="../img/mark-s2.webp" alt="38 markers" loading="lazy"></button><button data-full="../img/cs-story1.webp" aria-label="Open"><img src="../img/cs-story1.webp" alt="Creative brief" loading="lazy"></button><button data-full="../img/peri-b1.webp" aria-label="Open"><img src="../img/peri-b1.webp" alt="Myth" loading="lazy"></button></div></article></div>
+      </div>
+      <div role="tabpanel" id="p-web" aria-labelledby="t-web" hidden>
+        <h3 class="panel-title">Landing pages &amp; quizzes</h3>
+        <div class="grid"><article class="card"><div class="media short"><button data-full="../img/blog.webp" aria-label="Open"><img src="../img/blog.webp" alt="Miranna blog" loading="lazy"></button></div><div class="body"><a class="link" href="https://miranna.com/blog" target="_blank" rel="noopener">Blog on Webflow ↗</a></div></article><article class="card"><div class="media short"><button data-full="../img/blog-modal.webp" aria-label="Open"><img src="../img/blog-modal.webp" alt="Quiz pop-up in a blog article" loading="lazy"></button></div><div class="body"><a class="link" href="https://miranna.com/blog/menopause-myths" target="_blank" rel="noopener">Pop-up in a blog article ↗</a></div></article><article class="card"><div class="media tall"><button data-full="../img/quiz-body.webp" aria-label="Open"><img src="../img/quiz-body.webp" alt="Body quiz" loading="lazy"></button></div><div class="body"><a class="link" href="https://miranna.com/body-quiz" target="_blank" rel="noopener">“How well do you know your body” quiz ↗</a></div></article><article class="card"><div class="media tall"><button data-full="../img/quiz-lib.webp" aria-label="Open"><img src="../img/quiz-lib.webp" alt="Recommendation quiz" loading="lazy"></button></div><div class="body"><a class="link" href="https://miranna.com/quizmain" target="_blank" rel="noopener">Recommendation quiz ↗</a></div></article><article class="card wide"><div class="media "><button data-full="../img/club-main.webp" aria-label="Open"><img src="../img/club-main.webp" alt="Biohacking Club homepage" loading="lazy"></button></div><div class="body"><a class="link" href="https://club.miranna.io/" target="_blank" rel="noopener">Biohacking Club homepage on Tilda (RU) ↗</a></div></article><article class="card wide"><div class="media short"><button data-full="../img/club-w3.webp" aria-label="Open"><img src="../img/club-w3.webp" alt="Webinar 3" loading="lazy"></button><button data-full="../img/club.webp" aria-label="Open"><img src="../img/club.webp" alt="Webinar 2" loading="lazy"></button></div><div class="body"><a class="link" href="https://club.miranna.io/pochemu-propalo-zhelanie" target="_blank" rel="noopener">Webinar page on Tilda (RU) ↗</a></div></article></div>
+      </div>
+      <div role="tabpanel" id="p-mail" aria-labelledby="t-mail" hidden>
+        <h3 class="panel-title">Email sequences</h3>
+        <div class="grid"><h4 class="sub-h">Post-purchase webinar sequence · RU</h4><p class="sub-p">Sample in Russian: six emails that take a buyer from payment to the webinar recording.</p>
+<article class="card wide"><div class="body"><div class="chain"><div class="ch"><p class="ch-when">1 · right after payment</p><p class="ch-subj">Вы записаны: встреча с врачом-гинекологом</p><button data-full="../img/wm1.webp" aria-label="Open email 1"><img src="../img/wm1.webp" alt="Email 1: You’re registered: meeting with a gynecologist" loading="lazy"></button></div><div class="ch"><p class="ch-when">2 · 2 days before</p><p class="ch-subj">Через два дня встречаемся</p><button data-full="../img/wm2.webp" aria-label="Open email 2"><img src="../img/wm2.webp" alt="Email 2: See you in two days" loading="lazy"></button></div><div class="ch"><p class="ch-when">3 · 1 day before</p><p class="ch-subj">Завтра в 18:30 — встреча с врачом</p><button data-full="../img/wm3.webp" aria-label="Open email 3"><img src="../img/wm3.webp" alt="Email 3: Tomorrow at 6:30 p.m.: meeting with the doctor" loading="lazy"></button></div><div class="ch"><p class="ch-when">4 · 1 hour before</p><p class="ch-subj">Через час начинаем</p><button data-full="../img/wm4.webp" aria-label="Open email 4"><img src="../img/wm4.webp" alt="Email 4: We start in an hour" loading="lazy"></button></div><div class="ch"><p class="ch-when">5 · 10 minutes before</p><p class="ch-subj">Начинаем через 10 минут</p><button data-full="../img/wm5.webp" aria-label="Open email 5"><img src="../img/wm5.webp" alt="Email 5: Starting in 10 minutes" loading="lazy"></button></div><div class="ch"><p class="ch-when">6 · the next day</p><p class="ch-subj">Запись встречи и дневник цикла внутри</p><button data-full="../img/wm6.webp" aria-label="Open email 6"><img src="../img/wm6.webp" alt="Email 6: Inside: the recording and your cycle diary" loading="lazy"></button></div></div>
+<p class="ch-note">The first email is triggered by payment; the rest go out to a segment at scheduled times. The segment is rebuilt before every send, so last-minute buyers get the emails too.</p></div></article><h4 class="sub-h">Post-quiz email sequence · EN</h4>
+<article class="card wide"><div class="flow"><span class="step">quiz</span><span class="arr">→</span><span class="step">answer to question 4</span><span class="arr">→</span><span class="step">1 of 7 results</span><span class="arr">→</span><span class="step">email with 6 hand-picked summaries</span><span class="arr">→</span><span class="step">7-day free trial</span></div>
+<div class="body"><div class="tbl"><table><thead><tr><th>Result</th><th>Answer to question 4</th><th>Subject line</th></tr></thead><tbody><tr><td>The Body-Curious</td><td>Understanding my body &amp; hormones</td><td>Your body, finally in plain English</td></tr><tr><td>The Spark-Seeker</td><td>My energy &amp; spark</td><td>Get your spark back, 10 minutes at a time</td></tr><tr><td>The Connector</td><td>My relationships</td><td>Show up for them — without running on empty</td></tr><tr><td>The Becoming</td><td>My confidence</td><td>Meet the bolder version of you</td></tr><tr><td>The Equilibrist</td><td>A real sense of balance</td><td>Make it all feel a little lighter</td></tr><tr><td>The Rekindler</td><td>Intimacy &amp; connection</td><td>Bring the spark back to the spotlight</td></tr><tr><td>The Whole-Self Seeker</td><td>A little of everything</td><td>A little of everything you came for</td></tr></tbody></table></div>
+<details><summary>Full email: The Body-Curious</summary><div class="mail"><p class="m-h"><b>Subject:</b> Your body, finally in plain English<br><b>Preview:</b> Where to start when you’re done guessing — 7 free days inside.</p>
+<p>Hi there,</p><p>You came out The Body-Curious — done guessing, ready to actually understand what’s going on. Perfect place to start.</p>
+<p><b>Here’s the idea.</b> Miranna gathers the most current thinking on women’s health and wellbeing — from the world’s best books, experts and podcasts — and turns it into short audio summaries and insights every woman should know. Only top sources, only real experts, distilled to about 10–15 minutes you can finish on a coffee break.</p>
+<p><b>Your starter set — tap any to listen:</b></p>
+<ul><li>Hormone Intelligence — calm the hormone chaos, cycle to mood</li><li>The Menopause Brain — what’s really happening in midlife</li><li>Estrogen Matters — the HRT evidence, clearly explained</li><li>The Women’s Brain Book — hormones and mood, connected</li><li>Weights Then Sprints: Women Over 40 — training that finally works in midlife</li><li>The Truth about Cycle, PCOS &amp; Endometriosis — your cycle as a vital sign</li></ul>
+<p><b>Your first 7 days are free.</b> That’s the whole point: at one short listen a day, a week is enough to finish every title above. Cancel anytime before the trial ends and you won’t be charged.</p>
+<p class="m-btn">▶ Start my 7 free days</p><p>See you inside,<br>The Miranna team</p></div></details></div></article><h4 class="sub-h">Monthly app digest · EN</h4>
+<article class="card wide"><div class="media mailshot"><button data-full="../img/digest-jun.webp" aria-label="Open digest"><img src="../img/digest-jun.webp" alt="June digest" loading="lazy"></button></div><div class="body"><ul class="steps"><li>June: “New: a 2-minute quiz that builds your reading list”</li><li>July: “Every summary now tells you what to actually do”</li><li>August: “August was about desire — and what nobody explained about it”</li></ul>
+<details><summary>Full email: August</summary><div class="mail"><p class="m-h"><b>Subject:</b> August was about desire — and what nobody explained about it<br><b>Preheader:</b> 7 new summaries: intimacy, hormones by decade, the maternal brain</p>
+<p><b>We spent August on the conversation most women have never actually had.</b></p>
+<p>Desire. What happens to it in a long relationship, why it stops matching your partner's, and why so much of what you were taught about it was written for somebody else's body.</p>
+<p>Four new summaries, and none of them start with "spice things up."</p>
+<p class="m-sec">NEW THIS MONTH: DESIRE, HONESTLY</p>
+<p><b>Mind The Gap — Dr. Karen Gurney</b><br>Your desire isn't broken. A psychosexologist on responsive desire — the female default — and why the orgasm gap is a script problem.</p>
+<p><b>The Pleasure Gap — Katherine Rowland</b><br>Five years, 120+ women interviewed. Why so many feel numb in bed — and why the answer is never another pill.</p>
+<p><b>Magnificent Sex — Dr. Peggy Kleinplatz &amp; Dana Ménard</b><br>Researchers interviewed 75+ people with extraordinary sex lives, many of them over 60 and together 25 years. Their answers break every media myth.</p>
+<p class="m-sec">ALSO NEW: YOUR HORMONES, YOUR BODY</p>
+<p><b>Your Hormones, By Decade · Huberman Lab</b><br>Dr. Sara Gottfried gives Huberman the decade-by-decade lab roadmap most women are never handed.</p>
+<p class="m-sec">AND ONE ON THE MATERNAL BRAIN</p>
+<p><b>Mother Brain — Chelsea Conaboy</b><br>Pregnancy rebuilds the brain on the scale adolescence does — in every primary caregiver.</p>
+<p class="m-sec">NEW ON THE BLOG: PERIMENOPAUSE</p>
+<p>Perimenopause Test · Perimenopause Insomnia · Perimenopause Rage · Menopause Myths</p>
+<p>See you in the app,<br>Mira</p></div></details></div></article></div>
+      </div>
+
+      <div role="tabpanel" id="p-mon" aria-labelledby="t-mon" hidden>
+        <h3 class="panel-title">Video editing</h3>
+        <p class="panel-lead">Reels and video edits in Russian and English.</p>
+        <div class="grid three"><article class="card"><div class="vid"><video controls playsinline preload="metadata" poster="../img/vera-poster.webp" aria-label="Reel with the AI avatar Vera"><source src="../media/vera.mp4" type="video/mp4"></video></div><div class="body"><span class="ai-badge">AI avatar</span><a class="link" href="https://www.instagram.com/reel/DewjpEntxrU/" target="_blank" rel="noopener">View on Instagram ↗</a></div></article><article class="card"><div class="vid"><video controls playsinline preload="metadata" poster="../img/vera-babygirl-poster.webp" aria-label="Reel with the AI avatar Vera"><source src="../media/vera-babygirl.mp4" type="video/mp4"></video></div><div class="body"><span class="ai-badge">AI avatar</span><a class="link" href="https://www.instagram.com/reel/DfSFlH9RXPI/" target="_blank" rel="noopener">View on Instagram ↗</a></div></article><article class="card"><div class="vid"><video controls playsinline preload="metadata" poster="../img/vera-gta-poster.webp" aria-label="Reel with the AI avatar Vera about GTA 6"><source src="../media/vera-gta.mp4" type="video/mp4"></video></div><div class="body"><span class="ai-badge">AI avatar</span><a class="link" href="https://www.instagram.com/reel/Df9i0VMRo0S/" target="_blank" rel="noopener">View on Instagram ↗</a></div></article><article class="card"><div class="vid"><video controls playsinline preload="metadata" poster="../img/jlo-poster.webp" aria-label="Reel about Jennifer Lopez with an AI avatar"><source src="../media/jlo.mp4" type="video/mp4"></video></div><div class="body"><span class="ai-badge">AI avatar</span></div></article><article class="card"><div class="vid"><video controls playsinline preload="metadata" poster="../img/prytkova-poster.webp" aria-label="Webinar highlights with a sexologist"><source src="../media/prytkova.mp4" type="video/mp4"></video></div></article><article class="card"><div class="vid"><video controls playsinline preload="metadata" poster="../img/sokolova-poster.webp" aria-label="Webinar highlights with an endocrinologist"><source src="../media/sokolova.mp4" type="video/mp4"></video></div></article><article class="card"><div class="vid"><video controls playsinline preload="metadata" poster="../img/mamafest-poster.webp" aria-label="Post-festival video for Mama Space"><source src="../media/mamafest.mp4" type="video/mp4"></video></div></article><article class="card"><div class="vid"><video controls playsinline preload="metadata" poster="../img/valeria-poster.webp" aria-label="Reel with a gynecologist"><source src="../media/valeria.mp4" type="video/mp4"></video></div><div class="body"><a class="link" href="https://www.instagram.com/reel/De1tgDwiuJI/" target="_blank" rel="noopener">View on Instagram ↗</a></div></article><article class="card"><div class="media tall"><button data-full="../img/ig-mon1.webp" aria-label="Open"><img src="../img/ig-mon1.webp" alt="A brief history of how millennials tried to lose weight" loading="lazy"></button></div><div class="body"><a class="link" href="https://www.instagram.com/reel/Ddt34SVt_nv/" target="_blank" rel="noopener">View on Instagram ↗</a></div></article><article class="card"><div class="vid"><video controls playsinline preload="metadata" poster="../img/cart-poster.webp" aria-label="“Basket of myths” reel"><source src="../media/cart.mp4" type="video/mp4"></video></div></article></div>
+      </div>
+      <div role="tabpanel" id="p-vid" aria-labelledby="t-vid" hidden>
+        <h3 class="panel-title">AI avatars</h3>
+        <div class="grid three"><article class="card"><div class="vid"><video controls playsinline preload="metadata" poster="../img/vera-babygirl-poster.webp" aria-label="AI avatar Vera"><source src="../media/vera-babygirl.mp4" type="video/mp4"></video></div><div class="body"><a class="link" href="https://www.instagram.com/reel/DfSFlH9RXPI/" target="_blank" rel="noopener">View on Instagram ↗</a></div></article><article class="card"><div class="vid"><video controls playsinline preload="metadata" poster="../img/vera-gta-poster.webp" aria-label="AI avatar Vera on GTA 6"><source src="../media/vera-gta.mp4" type="video/mp4"></video></div><div class="body"><a class="link" href="https://www.instagram.com/reel/Df9i0VMRo0S/" target="_blank" rel="noopener">View on Instagram ↗</a></div></article><article class="card"><div class="vid"><video controls playsinline preload="metadata" poster="../img/jlo-poster.webp" aria-label="AI avatar in a reel about Jennifer Lopez"><source src="../media/jlo.mp4" type="video/mp4"></video></div></article><article class="card"><div class="vid"><video controls playsinline preload="metadata" poster="../img/vera-poster.webp" aria-label="AI avatar Vera"><source src="../media/vera.mp4" type="video/mp4"></video></div><div class="body"><a class="link" href="https://www.instagram.com/reel/DewjpEntxrU/" target="_blank" rel="noopener">View on Instagram ↗</a></div></article><article class="card"><div class="media tall"><button data-full="../img/ig-ava2.webp" aria-label="Open"><img src="../img/ig-ava2.webp" alt="Everything that actually happened in the world" loading="lazy"></button></div><div class="body"><a class="link" href="https://www.instagram.com/reel/DYUOzV1t9lj/" target="_blank" rel="noopener">View on Instagram ↗</a></div></article><article class="card"><div class="media tall"><button data-full="../img/vera-end.webp" aria-label="Open"><img src="../img/vera-end.webp" alt="Vera" loading="lazy"></button><button data-full="../img/vera-screen.webp" aria-label="Open"><img src="../img/vera-screen.webp" alt="Screen" loading="lazy"></button></div></article><article class="card"><div class="media tall"><button data-full="../img/char-chloe.webp" aria-label="Open"><img src="../img/char-chloe.webp" alt="Character" loading="lazy"></button><button data-full="../img/char-maya.webp" aria-label="Open"><img src="../img/char-maya.webp" alt="Character" loading="lazy"></button><button data-full="../img/char-nadia.webp" aria-label="Open"><img src="../img/char-nadia.webp" alt="Character" loading="lazy"></button><button data-full="../img/char-amara.webp" aria-label="Open"><img src="../img/char-amara.webp" alt="Character" loading="lazy"></button></div></article></div>
+      </div>
+      <div role="tabpanel" id="p-auto" aria-labelledby="t-auto" hidden>
+        <h3 class="panel-title">Automation</h3>
+        <div class="grid three"><article class="card"><div class="flow"><span class="step">Ahrefs</span><span class="arr">→</span><span class="step">draft</span><span class="arr">→</span><span class="step">my edit</span><span class="arr">→</span><span class="step">Webflow</span></div><div class="body"><h4>Blog content pipeline</h4></div></article><article class="card"><div class="flow"><span class="step">Reels</span><span class="arr">→</span><span class="step">AI watches the videos</span><span class="arr">→</span><span class="step">hypotheses</span></div><div class="body"><h4>Viral video research</h4></div></article><article class="card"><div class="flow"><span class="step">monitoring</span><span class="arr">→</span><span class="step">scoring</span><span class="arr">→</span><span class="step">Telegram</span></div><div class="body"><h4>Trend bot</h4></div></article></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><p class="label">Projects</p><h2>Who I’ve written for</h2></div>
+        
+      </div>
+      <div class="projects"><div class="pcard"><b>Miranna</b><span class="spec">app · US · EN</span><p>Website and blog on Webflow, quizzes, email sequences, digests, social media, AI avatars and video.</p></div><div class="pcard"><b>Female Founder</b><span class="spec">Telegram channel · RU</span><p>News on women, business and health; event announcements.</p></div><div class="pcard"><b>Miranna Biohacking Club</b><span class="spec">online talks with doctors · RU</span><p>Website and landing pages on Tilda, email sequences, announcements, Stories, Reels.</p></div><div class="pcard"><b>Unisender</b><span class="spec">blog · RU</span><p>Articles for the email marketing platform’s blog.</p></div><div class="pcard"><b>SheSharp</b><span class="spec">Amsterdam · EN</span><p>Partner workshop: carousel, LinkedIn post, presentation.</p></div><div class="pcard"><b>Paid placements</b><span class="spec">Telegram · RU</span><p>The club speakers’ own channels (a doctor and a sexologist), Mama Space, a Moscow women’s community, No Borders for Women, Femtech Force, and the Krasnodar city channel “Ogon”.</p></div><div class="pcard"><b><a href="https://school-concept.ru/" target="_blank" rel="noopener">Concept Private School</a></b><span class="spec">2021–2025 · RU</span><p>Social media management for Telegram, Instagram and VK; website copy.</p></div></div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="about">
+    <div class="wrap exp">
+      <ol class="timeline">
+        <li><span class="when">2022 — present</span><div><b>Miranna · Content Lead</b><span>Own all brand content: blog, email, social media, video and landing pages. Built an AI-powered content production system.</span></div></li>
+        <li><span class="when">2020 — present</span><div><b>Female Founder · Telegram Channel Editor</b><span>Run the editorial process, with mandatory fact-checking.</span></div></li>
+        <li><span class="when">2021 — 2025</span><div><b>Concept Private School · SMM &amp; Copywriter</b><span>Website copy, social media posts, newsletters.</span></div></li>
+        <li><span class="when">2019 — 2022</span><div><b>Miranna · SMM Manager</b><span>Conversion-focused content and targeted advertising.</span></div></li>
+        <li><span class="when">Earlier</span><div><b>Weekend Talk · Head of Sales</b><span>Sales, staff training and team management. Previously at UniSender.</span></div></li>
+      </ol>
+      <div class="side">
+        <div><h3>Education</h3><p>Russian New University, Translation and Translation Studies (linguist-translator), 2015.</p></div>
+        <div><h3>Languages</h3><p>Russian (native), English (C1).</p></div>
+        <div><h3>Tools</h3>
+          <div class="toolbox"><span class="tag">Claude</span><span class="tag">Claude Code</span><span class="tag">SYNTX AI</span><span class="tag">Higgsfield</span><span class="tag">HeyGen</span><span class="tag">CapCut</span><span class="tag">InShot</span><span class="tag">Kling</span><span class="tag">Nano Banana</span><span class="tag">Gemini</span><span class="tag">Remotion</span><span class="tag">Webflow</span><span class="tag">Tilda</span><span class="tag">Unisender</span><span class="tag">Selzy</span><span class="tag">AppsFlyer</span><span class="tag">Ahrefs</span><span class="tag">ScrapeCreators</span><span class="tag">Figma</span><span class="tag">Notion</span><span class="tag">Google Docs</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap contact">
+      <div>
+        <p class="label">Contact</p>
+        <h2>Available for remote work</h2>
+        <p class="sub">Part-time roles or project work. Get in touch and I’ll gladly walk you through any example on this page.</p>
+      </div>
+      <div class="cards">
+        <div class="cline"><a class="v" id="c-tg" href="https://t.me/VikaGribenko" target="_blank" rel="noopener">Telegram: @VikaGribenko</a><a class="copy" href="https://t.me/VikaGribenko" target="_blank" rel="noopener">Message</a></div>
+        <div class="cline"><span class="v" id="c-mail">vgribenkotarget@gmail.com</span><button class="copy" data-copy="c-mail">Copy</button></div>
+        <div class="cline"><span class="v" id="c-tel">+7 (909) 944-18-20</span><button class="copy" data-copy="c-tel">Copy</button></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap">Victoria Gribenko · Portfolio 2026</div></footer>
+
+<dialog id="lb" aria-label="Image viewer">
+  <img id="lb-img" alt="">
+  <div class="cap"><span id="lb-cap"></span><button id="lb-close">Close</button></div>
+</dialog>
+
+<script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('[role="tab"]'));
+  function select(t,focus){
+    tabs.forEach(function(x){var on=x===t;x.setAttribute('aria-selected',String(on));x.tabIndex=on?0:-1;document.getElementById(x.getAttribute('aria-controls')).hidden=!on});
+    if(focus)t.focus();
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){select(t)});
+    t.addEventListener('keydown',function(e){
+      var k=e.key,n=null;
+      if(k==='ArrowRight')n=tabs[(i+1)%tabs.length];else if(k==='ArrowLeft')n=tabs[(i-1+tabs.length)%tabs.length];else if(k==='Home')n=tabs[0];else if(k==='End')n=tabs[tabs.length-1];
+      if(n){e.preventDefault();select(n,true)}
+    });
+  });
+  var lb=document.getElementById('lb'),li=document.getElementById('lb-img'),lc=document.getElementById('lb-cap');
+  document.querySelectorAll('button[data-full]').forEach(function(b){b.addEventListener('click',function(){
+    var im=b.querySelector('img');li.src=b.dataset.full;li.alt=im.alt;lc.textContent=im.alt;
+    if(lb.showModal)lb.showModal();
+  })});
+  document.getElementById('lb-close').addEventListener('click',function(){lb.close()});
+  lb.addEventListener('click',function(e){if(e.target===lb)lb.close()});
+  document.querySelectorAll('.copy').forEach(function(b){b.addEventListener('click',function(){
+    var el=document.getElementById(b.dataset.copy),t=el.textContent;
+    function sel(){var r=document.createRange();r.selectNodeContents(el);var s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Selected'}
+    try{navigator.clipboard.writeText(t).then(function(){b.textContent='Copied'},sel)}catch(e){sel()}
+    setTimeout(function(){b.textContent='Copy'},2000);
+  })});
+})();
+
+  document.querySelectorAll('.slider').forEach(function(sl){
+    var tr=sl.querySelector('.slides'),pv=sl.querySelector('.sl-prev'),nx=sl.querySelector('.sl-next'),ct=sl.querySelector('.sl-count'),items=[].slice.call(tr.children);
+    function idx(){var x=tr.scrollLeft,best=0,d=1e9;items.forEach(function(it,i){var dd=Math.abs(it.offsetLeft-tr.offsetLeft-x-parseFloat(getComputedStyle(tr).paddingLeft));if(dd<d){d=dd;best=i}});return best}
+    function upd(){if(!tr.clientWidth)return;var i=idx();ct.textContent=(i+1)+' / '+items.length;pv.disabled=tr.scrollLeft<4;nx.disabled=tr.scrollLeft+tr.clientWidth>=tr.scrollWidth-4}
+    function go(i){i=Math.max(0,Math.min(items.length-1,i));tr.scrollTo({left:items[i].offsetLeft-tr.offsetLeft-parseFloat(getComputedStyle(tr).paddingLeft),behavior:'smooth'})}
+    pv.addEventListener('click',function(){go(idx()-1)});nx.addEventListener('click',function(){go(idx()+1)});
+    tr.addEventListener('scroll',function(){window.requestAnimationFrame(upd)},{passive:true});window.addEventListener('resize',upd);upd();
+  });
+  document.querySelectorAll('[role=tab]').forEach(function(t){t.addEventListener('click',function(){setTimeout(function(){window.dispatchEvent(new Event('resize'))},60)})});
+</script>
+
+</body>
+</html>
